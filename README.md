@@ -2,7 +2,7 @@
 ## COVID-19 Data visualization
 
 
-We used the following data source to perform our task:
+I have used the following data source to perform the task:
 
 Dataset Name: Our World in Data
 
