@@ -19,7 +19,7 @@ app = dash.Dash(__name__, external_stylesheets=external_stylesheets)
 # CSS stylesheet for dash end.
 
 # Task 1 from the concept paper start.
-# Coded by Varun Nandkumar Golani
+
 
 countries_in_europe = covid19_data_frame['location'].unique().tolist()
 
@@ -39,7 +39,7 @@ fig1 = px.line(covid19_data_frame, x='date', y='stringency_index',
 # Task 1 from the concept paper End.
 
 # Task 2 from the concept paper start.
-# Coded by Lalith Sagar Devagudi
+
 
 # creating a data frame from the actual europe data frame
 recent_deaths_data_frame = pd.DataFrame(columns=['location', 'total_cases', 'total_deaths', 'date', 'population',
@@ -117,7 +117,7 @@ fig2.update_layout(
 # Task 2 from the concept paper end.
 
 # Task 3 from the concept paper start.
-# Coded by Varun Nandkumar Golani
+
 
 recent_tests_data_frame = pd.DataFrame(columns=['location', 'total_tests', 'date'])
 for country in countries_in_europe:
@@ -138,7 +138,7 @@ fig3.update_traces(textposition='inside', textinfo='percent+label'
 # Task 3 from the concept paper end.
 
 # Task 4 from the concept paper Start.
-# coded by Sanjay Gupta
+
 
 iso_code_list = covid19_data_frame["iso_code"].unique().tolist()
 iso_code_color_dict = {iso_code_list[index]: color_list[index] for index in range(len(iso_code_list))}
